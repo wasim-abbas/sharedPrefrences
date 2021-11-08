@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter"
+        android:paddingStart="20dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnExpplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/explicit" />
+    <Button
+        android:id="@+id/btnImplicit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed1"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/btnExpplicit"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/explicit" />
+    <Button
+        android:id="@+id/btnPhoneDiler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ed1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/btnImplicit"
+        android:backgroundTint="@color/btnColor"
+        android:text="Open Dialer" />
+    <Button
+        android:id="@+id/btnstoreSh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPhoneDiler"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/store_data_in_shared_prefrences"
+        />
+    <Button
+        android:id="@+id/btnShowSh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnstoreSh"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="Show data in shared prefrences"
+        />
+    <Button
+        android:id="@+id/btnclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShowSh"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/btnColor"
+        android:text="@string/clear_sh"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvShowShared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnclear"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+</RelativeLayout>

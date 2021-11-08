@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sharedPreferences_and Intent</string>
+    <string name="implicit">Implicit</string>
+    <string name="explicit">Explicit</string>
+    <string name="data">Data</string>
+    <string name="store_data_in_shared_prefrences">Store data in shared Prefrences</string>
+    <string name="clear_sh">clear Sh</string>
+</resources>
